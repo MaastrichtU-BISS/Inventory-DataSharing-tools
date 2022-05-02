@@ -1,11 +1,16 @@
-curl -L -o PPDDM_reviewResults_V202108_V3.csv https://figshare.com/ndownloader/files/30463266?private_link=cbb2317239ecfa48339f
+filename=PPDDM_reviewResults_V202108_V3.csv
+curl -L -o $filename https://figshare.com/ndownloader/files/30463266?private_link=cbb2317239ecfa48339f
+
+# remove \uFEFF / Byte-order-mark (BOM)
+vi -c ":set nobomb" -c ":wq" $filename
 
 touch output.ttl
 touch ontology.owl
 
-docker run -it --rm \
+docker run --rm \
+   --hostname http://www.biss-institute.com/rdf/elsa_poverty_debt \
    -v $(pwd)/output.ttl:/output.ttl \
    -v $(pwd)/ontology.owl:/ontology.owl \
    -v $(pwd)/triplifier.properties:/triplifier.properties \
    -v $(pwd):/data \
-   registry.gitlab.com/um-cds/fair/tools/triplifier:latest /bin/bash
+   registry.gitlab.com/um-cds/fair/tools/triplifier:latest
