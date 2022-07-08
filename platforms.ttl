@@ -1,0 +1,50 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix platform: <#>.
+@prefix index: <>.
+@prefix schema: <https://schema.org/>.
+
+index: rdf:type platform:index.
+
+platform:platform rdf:type owl:Class;
+    rdfs:label "Platform".
+platform:framework rdf:type owl:Class;
+    rdfs:label "Framework".
+platform:ApplicationFramework rdfs:subClassOf platform:framework;
+    rdfs:label "Application Framework".
+platform:FederatedAnalysisPlatform rdfs:subClassOf platform:platform;
+    rdfs:label "Federated Analysis Platform".
+
+platform:FederatedScope rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://federatedscope.io>;
+    rdfs:label "FederatedScope".
+
+platform:FLUTE rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://www.microsoft.com/en-us/research/blog/flute-a-scalable-federated-learning-simulation-platform/>;
+    rdfs:label "FLUTE";
+    schema:endorsers <https://research.microsoft.com>.
+
+<https://www.xaynet.dev> rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://www.xaynet.dev>;
+    rdfs:label "XayNet";
+    schema:endorsers <https://www.xayn.com/company>.
+
+platform:ichnite rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://intellegens.com/products-services/ichnite/>;
+    rdfs:label "Ichnite";
+    schema:endorsers <https://intellegens.com>.
+
+platform:fate rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://fate.fedai.org>;
+    rdfs:label "FATE";
+    schema:endorsers <https://www.fedai.org>.
+
+platform:owkin rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://owkin.com/what-is-federated-learning>;
+    rdfs:label "OWKIN";
+    schema:endorsers <https://owkin.com>;
+    schema:credentialCategory "ISO27001".
+
+platform:clara rdf:type platform:ApplicationFramework;
+    schema:url <https://developer.nvidia.com/clara>;
+    rdfs:label "CLARA";
+    schema:endorsers <https://nvidia.com/>.
