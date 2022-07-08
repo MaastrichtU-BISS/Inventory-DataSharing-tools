@@ -1,3 +1,5 @@
 .venv/
 venv/
 *.csv
+DS-210036/ontology.owl
+DS-210036/output.ttl

@@ -13,4 +13,4 @@ docker run --rm \
    -v $(pwd)/ontology.owl:/ontology.owl \
    -v $(pwd)/triplifier.properties:/triplifier.properties \
    -v $(pwd):/data \
-   registry.gitlab.com/um-cds/fair/tools/triplifier:latest
+   ghcr.io/maastrichtu-cds/triplifier:latest
