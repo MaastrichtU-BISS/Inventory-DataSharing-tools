@@ -3,16 +3,29 @@
 @prefix index: <>.
 @prefix schema: <https://schema.org/>.
 
+#########################
+# Input emails:
+#   - message://%3CAS1PR07MB8759457F6EB4EEB51F793D6AE5A79@AS1PR07MB8759.eurprd07.prod.outlook.com%3E
+#########################
+
 index: rdf:type platform:index.
 
 platform:platform rdf:type owl:Class;
     rdfs:label "Platform".
+platform:initiative rdf:type owl:Class;
+    rdfs:label "Initiative".
 platform:framework rdf:type owl:Class;
     rdfs:label "Framework".
+platform:library rdf:type owl:Class;
+    rdfs:label "Library".
 platform:ApplicationFramework rdfs:subClassOf platform:framework;
     rdfs:label "Application Framework".
 platform:FederatedAnalysisPlatform rdfs:subClassOf platform:platform;
     rdfs:label "Federated Analysis Platform".
+platform:SoftwareLibrary rdfs:subClassOf platform:library;
+    rdfs:label "Software Library".
+platform:SoftwareLibraryPython rdfs:subClassOf platform:SoftwareLibrary;
+    rdfs:label "Software Library written in Python".
 
 platform:FederatedScope rdf:type platform:FederatedAnalysisPlatform;
     schema:url <https://federatedscope.io>;
@@ -42,9 +55,91 @@ platform:owkin rdf:type platform:FederatedAnalysisPlatform;
     schema:url <https://owkin.com/what-is-federated-learning>;
     rdfs:label "OWKIN";
     schema:endorsers <https://owkin.com>;
-    schema:credentialCategory "ISO27001".
+    schema:credentialCategory "ISO27001";
+    schema:memberOf <https://www.melloddy.eu>.
 
 platform:clara rdf:type platform:ApplicationFramework;
     schema:url <https://developer.nvidia.com/clara>;
     rdfs:label "CLARA";
     schema:endorsers <https://nvidia.com/>.
+
+platform:roseman rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://rosemanlabs.com>;
+    schema:comment "Mostly focussing on MPC and a \"virtual data lake\"";
+    rdfs:label "Rosamen labs";
+    schema:endorsers <https://rosemanlabs.com>.
+
+platform:pysyft rdf:type platform:SoftwareLibraryPython;
+    schema:url <https://github.com/OpenMined/PySyft>;
+    rdfs:label "PySyft";
+    schema:endorsers <https://www.openmined.org>.
+
+platform:labelia rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://www.labelia.org/en/home>;
+    rdfs:label "Labelia Labs";
+    schema:endorsers <https://www.labelia.org>;
+    schema:memberOf <https://www.melloddy.eu>.
+
+platform:openfl rdf:type platform:SoftwareLibraryPython;
+    schema:url <https://github.com/intel/openfl>;
+    rdfs:label "OpenFL";
+    schema:endorsers <https://www.linkedin.com/company/intel-labs/>,<https://www.linkedin.com/showcase/intel-internet-of-things/>;
+    schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
+
+platform:tensorflow_federated rdf:type platform:ApplicationFramework;
+    schema:url <https://www.tensorflow.org/federated>;
+    rdfs:label "TensorFlow Federated";
+    schema:endorsers <https://research.google/teams/brain/>;
+    schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
+
+platform:ibmfl rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://ibmfl.mybluemix.net>;
+    rdfs:label "IBM Federated Learning";
+    schema:comment "Proprietary license IBM (not for commercial or production use)";
+    schema:endorsers <https://www.research.ibm.com>;
+    schema:license <https://github.com/IBM/federated-learning-lib/blob/main/LICENSE>.
+
+platform:vantage6 rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://www.distributedlearning.ai>;
+    rdfs:label "Vantage6";
+    schema:endorsers <https://www.iknl.nl>, <https://clinicaldatascience.nl>;
+    schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
+
+platform:datashield rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://www.datashield.org>;
+    rdfs:label "DataShield";
+    schema:endorsers <https://www.ncl.ac.uk>;
+    schema:license <http://www.gnu.org/licenses/gpl-3.0.html>.
+
+platform:medco rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://medco.epfl.ch/>;
+    rdfs:label "MedCo";
+    schema:comment "Proprietary license medco, no for commercial use";
+    schema:endorsers <https://www.epfl.ch>;
+    schema:license <https://github.com/ldsec/medco/blob/dev/LICENSE>.
+
+platform:featurecloud rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://featurecloud.ai>;
+    rdfs:label "FeatureCloud";
+    schema:endorsers <https://uni-hamburg.de>, <https://clinicaldatascience.nl>;
+    schema:memberOf <https://featurecloud.eu/>;
+    schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
+
+platform:smith-pht rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://doi.org/10.1055/s-0041-1740564>;
+    rdfs:label "SMITH consortium PHT".
+
+platform:beacon rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://beacon-network.org/#/about>;
+    rdfs:label "Beacon";
+    schema:endorsers <https://dnastack.com>,<https://genomecanada.ca>,<https://www.ga4gh.org>.
+
+platform:auscat rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://doi.org/10.1111/1754-9485.13287>;
+    rdfs:label "AusCAT".
+
+platform:branchkey rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://branchkey.com>;
+    rdfs:label "BranchKey";
+    schema:comment "Not for commercial use";
+    schema:endorsers <https://branchkey.com>.
