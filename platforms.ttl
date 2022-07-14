@@ -145,3 +145,9 @@ platform:branchkey rdf:type platform:FederatedAnalysisPlatform;
     rdfs:label "BranchKey";
     schema:comment "Not for commercial use";
     schema:endorsers <https://branchkey.com>.
+
+platform:iSHARE rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://ishare.eu>;
+    rdfs:label "iSHARE";
+    schema:license <https://unlicense.org>;
+    schema:endorsers <https://ishare.eu>,<https://i4trust.org>,<https://connekt.nl>.
