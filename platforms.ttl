@@ -161,3 +161,8 @@ platform:fedml rdf:type platform:FederatedAnalysisPlatform;
     rdfs:label "FedML";
     schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
 
+platform:iSHARE rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://ishare.eu>;
+    rdfs:label "iSHARE";
+    schema:license <https://unlicense.org>;
+    schema:endorsers <https://ishare.eu>,<https://i4trust.org>,<https://connekt.nl>.
