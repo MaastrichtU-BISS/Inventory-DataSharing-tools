@@ -146,6 +146,21 @@ platform:branchkey rdf:type platform:FederatedAnalysisPlatform;
     schema:comment "Not for commercial use";
     schema:endorsers <https://branchkey.com>.
 
+platform:tsg rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://tno-tsg.github.io>;
+    rdfs:label "TNO Security Gateway";
+schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
+
+platform:flower rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://flower.dev>;
+    rdfs:label "Flower";
+    schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
+
+platform:fedml rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://fedml.ai>;
+    rdfs:label "FedML";
+    schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
+
 platform:iSHARE rdf:type platform:FederatedAnalysisPlatform;
     schema:url <https://ishare.eu>;
     rdfs:label "iSHARE";
