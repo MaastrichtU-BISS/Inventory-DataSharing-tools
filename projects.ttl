@@ -11,8 +11,12 @@ index: rdf:type project:index.
 project:project rdf:type owl:Class;
     rdfs:label "Project".
 
+project:convinced rdf:type project:project;
+    rdfs:label "CONVINCED";
+    schema:member <http://www.iknl.nl>,<http://www.tnl.nl>.
 project:lancelot rdf:type project:project;
     rdfs:label "LANCELOT";
+    schema:successorOf project:convinced;
     schema:member <http://www.iknl.nl>,<http://www.tnl.nl>;
     schema:associatedArticle [
         rdf:type schema:NewsArticle;
