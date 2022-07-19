@@ -151,3 +151,8 @@ platform:iSHARE rdf:type platform:FederatedAnalysisPlatform;
     rdfs:label "iSHARE";
     schema:license <https://unlicense.org>;
     schema:endorsers <https://ishare.eu>,<https://i4trust.org>,<https://connekt.nl>.
+
+platform:linksight rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://www.linksight.nl>;
+    rdfs:label "LinkSight";
+    schema:endorsers <https://www.tno.nl>,<https://www.tno.nl/nl/over-tno/nieuws/2021/7/lancering-spinoff-linksight-privacy-vriendelijke-data-analyse/>.
