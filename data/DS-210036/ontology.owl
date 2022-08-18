@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:db="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/"
+	xmlns:dbo="http://um-cds/ontologies/databaseontology/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://um-cds/ontologies/databaseontology/TableRow">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://um-cds/ontologies/databaseontology/ColumnCell">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://um-cds/ontologies/databaseontology/PrimaryKey">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://um-cds/ontologies/databaseontology/ForeignKey">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://um-cds/ontologies/databaseontology/has_column">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/TableRow"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://um-cds/ontologies/databaseontology/has_value">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/Cell"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://um-cds/ontologies/databaseontology/has_cell">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://um-cds/ontologies/databaseontology/has_unit">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://um-cds/ontologies/databaseontology/ColumnReference">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://um-cds/ontologies/databaseontology/table">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/TableRow"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://um-cds/ontologies/databaseontology/catalog">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/TableRow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://um-cds/ontologies/databaseontology/schema">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/TableRow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://um-cds/ontologies/databaseontology/column">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/TableRow"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3</label>
+	<dbo:table>PPDDM_reviewResults_V202108_V3</dbo:table>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.DOI">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.DOI</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>DOI</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.Titles">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.Titles</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>Titles</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.Authors">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.Authors</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>Authors</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.Keywords">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.Keywords</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>Keywords</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.User_scenario">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.User scenario</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>User scenario</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.Distributed_Data_scenario">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.Distributed Data scenario</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>Distributed Data scenario</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.Privacy/Security">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.Privacy/Security</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>Privacy/Security</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.Privacy_Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.Privacy Statement</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>Privacy Statement</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.PP_Method_Category">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.PP Method Category</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>PP Method Category</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.PP_Specific_Methods">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.PP Specific Methods</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>PP Specific Methods</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.Problem">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.Problem</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>Problem</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.ML_Method">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.ML Method</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>ML Method</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.Data">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.Data</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>Data</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.Accuracy">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.Accuracy</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>Accuracy</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.Efficiency">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.Efficiency</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>Efficiency</dbo:column>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3.Scalability">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://um-cds/ontologies/databaseontology/ColumnCell"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PPDDM_reviewResults_V202108_V3.Scalability</label>
+	<dbo:table rdf:resource="http://http://www.biss-institute.com/rdf/elsa_poverty_debt/rdf/ontology/PPDDM_reviewResults_V202108_V3"/>
+	<dbo:column>Scalability</dbo:column>
+</rdf:Description>
+
+</rdf:RDF>
