@@ -14,8 +14,6 @@ index: rdf:type platform:index.
 
 platform:platform rdf:type owl:Class;
     rdfs:label "Platform".
-platform:initiative rdf:type owl:Class;
-    rdfs:label "Initiative".
 platform:framework rdf:type owl:Class;
     rdfs:label "Framework".
 platform:library rdf:type owl:Class;
