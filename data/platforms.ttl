@@ -152,6 +152,7 @@ schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
 platform:flower rdf:type platform:FederatedAnalysisPlatform;
     schema:url <https://flower.dev>;
     rdfs:label "Flower";
+    schema:comment "Flower - Flower A Friendly Federated Learning Framework";
     schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
 
 platform:fedml rdf:type platform:FederatedAnalysisPlatform;
@@ -173,3 +174,8 @@ platform:linksight rdf:type platform:FederatedAnalysisPlatform;
 platform:FDSA rdf:type platform:FederatedAnalysisPlatform;
     rdfs:label "FDSA";
     schema:endorsers <https://addi.org>,<https://aridhia.com>.
+
+platform:scaleout rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://www.scaleoutsystems.com>, <https://github.com/scaleoutsystems>;
+    rdfs:label "Scaleout";
+    schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
