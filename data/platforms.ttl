@@ -69,6 +69,13 @@ platform:roseman rdf:type platform:FederatedAnalysisPlatform;
     rdfs:label "Rosamen labs";
     schema:endorsers <https://rosemanlabs.com>.
 
+platform:mpyc rdf:type platform:SoftwareLibraryPython;
+    schema:url <https://www.win.tue.nl/~berry/mpyc/>, <https://lschoe.github.io/mpyc>;
+    schema:comment "Proof and local test examples of MPC";
+    rdfs:label "MPyC";
+    schema:endorsers <https://rosemanlabs.com>;
+    schema:license <http://opensource.org/licenses/MIT>.
+
 platform:pysyft rdf:type platform:SoftwareLibraryPython;
     schema:url <https://github.com/OpenMined/PySyft>;
     rdfs:label "PySyft";
