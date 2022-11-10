@@ -186,3 +186,7 @@ platform:scaleout rdf:type platform:FederatedAnalysisPlatform;
     schema:url <https://www.scaleoutsystems.com>, <https://github.com/scaleoutsystems>;
     rdfs:label "Scaleout";
     schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
+
+platform:inpher rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://inpher.io>;
+    rdfs:label "inpher".
