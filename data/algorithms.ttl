@@ -1,0 +1,46 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix : <#>.
+@prefix index: <>.
+@prefix schema: <https://schema.org/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix platform: <platforms.ttl#>.
+
+:algorithm rdf:type owl:Class;
+    rdfs:label "Algorithm (library)".
+
+:algorithmImplementation rdf:type owl:Class;
+    rdfs:subClassOf :algorithm;
+    rdfs:label "Algorithm Implementation".
+
+:usesPlatform rdf:type rdf:Property;
+    rdfs:label "Uses platform";
+    rdfs:comment "The platform being used in the project. This can be a platform, framework or library";
+    rdfs:domain project:project, project:collaboration;
+    rdfs:range platform:platform, platform:framework, platform:library.
+
+:usesLibrary rdf:type rdf:Property;
+    rdfs:label "Uses algorithm library";
+    rdfs:comment "The dependency used as a critical component of the algorithm";
+    rdfs:domain :algorithm;
+    rdfs:range :algorithm.
+
+:verticox rdf:type :algorithmImplementation;
+    schema:url <https://github.com/CARRIER-project/verticox>;
+    rdfs:label "VertiCox";
+    schema:license <https://www.apache.org/licenses/LICENSE-2.0>;
+    algorithm:outputModel <http://www.wikidata.org/entity/Q223218>;
+    :usesLibrary :nspp;
+    :usesPlatform platform:vantage6.
+
+:vertibayes rdf:type :algorithmImplementation;
+    schema:url <https://github.com/MaastrichtU-CDS/vertibayes_vantage6>, <https://github.com/MaastrichtU-CDS/vertibayes>;
+    rdfs:label "VertiBayes";
+    algorithm:outputModel <http://www.wikidata.org/entity/Q812540>;
+    :usesLibrary :nspp;
+    :usesPlatform platform:vantage6.
+
+
+:nspp rdf:type :algorithm;
+    schema:url <https://github.com/MaastrichtU-CDS/n-scalar-product-protocol>;
+    rdfs:label "N-scalar-product-protocol".
