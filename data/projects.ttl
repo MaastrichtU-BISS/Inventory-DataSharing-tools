@@ -8,16 +8,16 @@
 
 index: rdf:type project:index.
 
+project:project rdf:type owl:Class;
+    rdfs:label "Project".
+project:collaboration rdf:type owl:Class;
+    rdfs:label "Collaboration".
+
 project:usesPlatform rdf:type rdf:Property;
     rdfs:label "Uses platform";
     rdfs:comment "The platform being used in the project. This can be a platform, framework or library";
     rdfs:domain project:project, project:collaboration;
     rdfs:range platform:platform, platform:framework, platform:library.
-
-project:project rdf:type owl:Class;
-    rdfs:label "Project".
-project:collaboration rdf:type owl:Class;
-    rdfs:label "Collaboration".
 
 project:convinced rdf:type project:project;
     rdfs:label "CONVINCED";
