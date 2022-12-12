@@ -41,11 +41,11 @@ Count: 30
 
 ## Projects
 
-| project           | platform         |
-|-------------------|------------------|
-| project:convinced |                  |
-| project:lancelot  |                  |
-| project:heracles  |                  |
-| project:melloddy  | platform:labelia |
+| project           | platformLabel   |
+|-------------------|-----------------|
+| project:convinced |                 |
+| project:lancelot  |                 |
+| project:heracles  |                 |
+| project:melloddy  |                 |
 
 Count: 4
