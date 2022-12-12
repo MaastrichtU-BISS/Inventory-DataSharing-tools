@@ -3,7 +3,7 @@ prefix schema: <https://schema.org/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?project ?platform
+SELECT ?project ?platformLabel
 WHERE {
     ?project rdf:type ?projectType.
     ?projectType rdfs:label ?projectTypeLabel.
@@ -13,5 +13,7 @@ WHERE {
         ?project ?usesPlatform ?platform.
         ?usesPlatform rdfs:label ?usesPlatformLabel.
         FILTER(?usesPlatformLabel = "Uses platform").
+
+        ?platform rdfs:label ?platformLabel.
     }
 }

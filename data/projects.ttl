@@ -1,6 +1,6 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix project: <#>.
-@prefix platform: <platforms.ttl#>.
+@prefix project: <https://raw.githubusercontent.com/MaastrichtU-BISS/Inventory-DataSharing-tools/main/data/projects.ttl#>.
+@prefix platform: <https://raw.githubusercontent.com/MaastrichtU-BISS/Inventory-DataSharing-tools/main/data/platforms.ttl#>.
 @prefix index: <>.
 @prefix schema: <https://schema.org/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
