@@ -1,11 +1,9 @@
 prefix owl: <http://www.w3.org/2002/07/owl#>
-prefix platform: <#>
-prefix index: <>
 prefix schema: <https://schema.org/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?platformLabel
+SELECT ?platformLabel ?platformTypeLabel
 WHERE {
     ?platform rdf:type ?platformType.
     ?platform rdfs:label ?platformLabel.
@@ -14,4 +12,4 @@ WHERE {
 
     ?platformTypeSuper rdfs:label ?platformTypeLabel.
     FILTER (?platformTypeLabel IN ("Platform", "Framework", "Library")).
-}
+} ORDER BY ?platformType
