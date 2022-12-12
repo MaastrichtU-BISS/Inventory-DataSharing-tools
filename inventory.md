@@ -37,6 +37,15 @@ This is the human-readable inventory of privacy-preserving analysis algorithms, 
 | PySyft                 | Library             |
 | OpenFL                 | Library             |
 
+Count: 30
+
 ## Projects
 
-%%PROJECTS_TABLE%%
+| project           | platform         |
+|-------------------|------------------|
+| project:convinced |                  |
+| project:lancelot  |                  |
+| project:heracles  |                  |
+| project:melloddy  | platform:labelia |
+
+Count: 4
