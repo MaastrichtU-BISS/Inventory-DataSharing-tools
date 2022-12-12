@@ -46,6 +46,6 @@ Count: 30
 | project:convinced |                 |
 | project:lancelot  |                 |
 | project:heracles  |                 |
-| project:melloddy  |                 |
+| project:melloddy  | Labelia Labs    |
 
 Count: 4
