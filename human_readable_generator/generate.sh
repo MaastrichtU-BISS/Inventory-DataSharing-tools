@@ -12,4 +12,4 @@ count=$(( $(echo "$table" | wc -l) -2))
 table="${table}\n\nCount: ${count}"
 output="${output//%%PROJECTS_TABLE%%/$table}"
 
-echo "$output" > ../inventory.md
+echo "$output" > ../public/inventory.md
