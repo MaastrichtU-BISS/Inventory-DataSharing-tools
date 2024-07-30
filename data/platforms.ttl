@@ -67,7 +67,7 @@ platform:clara rdf:type platform:ApplicationFramework;
 platform:roseman rdf:type platform:FederatedAnalysisPlatform;
     schema:url <https://rosemanlabs.com>;
     schema:comment "Mostly focussing on MPC and a \"virtual data lake\"";
-    rdfs:label "Rosamen labs";
+    rdfs:label "Roseman labs";
     schema:endorsers <https://rosemanlabs.com>.
 
 platform:mpyc rdf:type platform:SoftwareLibraryPython;
@@ -168,7 +168,7 @@ platform:fedml rdf:type platform:FederatedAnalysisPlatform;
     rdfs:label "FedML";
     schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
 
-platform:iSHARE rdf:type platform:FederatedAnalysisPlatform;
+platform:ishare rdf:type platform:FederatedAnalysisPlatform;
     schema:url <https://ishare.eu>;
     rdfs:label "iSHARE";
     schema:license <https://unlicense.org>;
@@ -179,7 +179,7 @@ platform:linksight rdf:type platform:FederatedAnalysisPlatform;
     rdfs:label "LinkSight";
     schema:endorsers <https://www.tno.nl>,<https://www.tno.nl/nl/over-tno/nieuws/2021/7/lancering-spinoff-linksight-privacy-vriendelijke-data-analyse/>.
 
-platform:FDSA rdf:type platform:FederatedAnalysisPlatform;
+platform:fdsa rdf:type platform:FederatedAnalysisPlatform;
     rdfs:label "FDSA";
     schema:endorsers <https://addi.org>,<https://aridhia.com>.
 
@@ -191,3 +191,23 @@ platform:scaleout rdf:type platform:FederatedAnalysisPlatform;
 platform:inpher rdf:type platform:FederatedAnalysisPlatform;
     schema:url <https://inpher.io>;
     rdfs:label "inpher".
+
+platform:synergos rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://docs.synergos.ai/>;
+    rdfs:label "Synergos".
+
+platform:fedlearnalgo rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://ui.adsabs.harvard.edu/abs/2021arXiv210704129L/abstract>;
+    rdfs:label "Fedlearn-Algo".
+
+platform:paddlefl rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://github.com/PaddlePaddle/PaddleFL>;
+    rdfs:label "PaddelFL".
+
+platform:easyfl rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://github.com/EasyFL-AI/EasyFL>;
+    rdfs:label "EasyFL".
+
+platform:xfl rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://github.com/paritybit-ai/XFL>;
+    rdfs:label "XFL".
