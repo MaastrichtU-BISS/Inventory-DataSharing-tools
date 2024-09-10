@@ -9,6 +9,7 @@ This is the human-readable inventory of privacy-preserving analysis algorithms, 
 | CLARA                  | Framework           |
 | TensorFlow Federated   | Framework           |
 | FederatedScope         | Platform            |
+| RhinoHealth            | Platform            |
 | FLUTE                  | Platform            |
 | NVIDIA FLARE           | Platform            |
 | XayNet                 | Platform            |
@@ -42,7 +43,9 @@ This is the human-readable inventory of privacy-preserving analysis algorithms, 
 | XFL                    | Platform            |
 | MPyC                   | Library             |
 | PySyft                 | Library             |
-| OpenFL                 | Library             |\n\nCount: 37
+| OpenFL                 | Library             |
+
+Count: 38
 
 ## Projects
 
@@ -51,4 +54,6 @@ This is the human-readable inventory of privacy-preserving analysis algorithms, 
 | project:convinced |                 |
 | project:lancelot  |                 |
 | project:heracles  |                 |
-| project:melloddy  | Labelia Labs    |\n\nCount: 4
+| project:melloddy  | Labelia Labs    |
+
+Count: 4

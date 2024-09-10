@@ -32,6 +32,10 @@ platform:FederatedScope rdf:type platform:FederatedAnalysisPlatform;
     schema:url <https://federatedscope.io>;
     rdfs:label "FederatedScope".
 
+platform:RhinoHealth rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://www.rhinohealth.com>;
+    rdfs:label "RhinoHealth".
+
 platform:FLUTE rdf:type platform:FederatedAnalysisPlatform;
     schema:url <https://www.microsoft.com/en-us/research/blog/flute-a-scalable-federated-learning-simulation-platform/>;
     rdfs:label "FLUTE";
