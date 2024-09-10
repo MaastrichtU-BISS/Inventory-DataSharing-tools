@@ -14,10 +14,11 @@ This is the human-readable inventory of privacy-preserving analysis algorithms, 
 | Ichnite                | Platform            |
 | FATE                   | Platform            |
 | OWKIN                  | Platform            |
-| Rosamen labs           | Platform            |
+| Roseman labs           | Platform            |
 | Labelia Labs           | Platform            |
 | IBM Federated Learning | Platform            |
 | Vantage6               | Platform            |
+| PADME                  | Platform            |
 | DataShield             | Platform            |
 | MedCo                  | Platform            |
 | FeatureCloud           | Platform            |
@@ -33,11 +34,14 @@ This is the human-readable inventory of privacy-preserving analysis algorithms, 
 | FDSA                   | Platform            |
 | Scaleout               | Platform            |
 | inpher                 | Platform            |
+| Synergos               | Platform            |
+| Fedlearn-Algo          | Platform            |
+| PaddelFL               | Platform            |
+| EasyFL                 | Platform            |
+| XFL                    | Platform            |
 | MPyC                   | Library             |
 | PySyft                 | Library             |
-| OpenFL                 | Library             |
-
-Count: 30
+| OpenFL                 | Library             |\n\nCount: 36
 
 ## Projects
 
@@ -46,6 +50,4 @@ Count: 30
 | project:convinced |                 |
 | project:lancelot  |                 |
 | project:heracles  |                 |
-| project:melloddy  | Labelia Labs    |
-
-Count: 4
+| project:melloddy  | Labelia Labs    |\n\nCount: 4
