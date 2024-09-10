@@ -37,6 +37,12 @@ platform:FLUTE rdf:type platform:FederatedAnalysisPlatform;
     rdfs:label "FLUTE";
     schema:endorsers <https://research.microsoft.com>.
 
+<https://developer.nvidia.com/flare> rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://developer.nvidia.com/flare>;
+    rdfs:label "NVIDIA FLARE";
+    schema:endorsers <https://nvidia.com/>;
+    schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
+
 <https://www.xaynet.dev> rdf:type platform:FederatedAnalysisPlatform;
     schema:url <https://www.xaynet.dev>;
     rdfs:label "XayNet";

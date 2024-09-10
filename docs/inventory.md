@@ -10,6 +10,7 @@ This is the human-readable inventory of privacy-preserving analysis algorithms, 
 | TensorFlow Federated   | Framework           |
 | FederatedScope         | Platform            |
 | FLUTE                  | Platform            |
+| NVIDIA FLARE           | Platform            |
 | XayNet                 | Platform            |
 | Ichnite                | Platform            |
 | FATE                   | Platform            |
@@ -41,7 +42,7 @@ This is the human-readable inventory of privacy-preserving analysis algorithms, 
 | XFL                    | Platform            |
 | MPyC                   | Library             |
 | PySyft                 | Library             |
-| OpenFL                 | Library             |\n\nCount: 36
+| OpenFL                 | Library             |\n\nCount: 37
 
 ## Projects
 
