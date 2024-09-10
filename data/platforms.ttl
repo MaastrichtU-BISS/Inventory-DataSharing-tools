@@ -113,6 +113,12 @@ platform:vantage6 rdf:type platform:FederatedAnalysisPlatform;
     schema:endorsers <https://www.iknl.nl>, <https://clinicaldatascience.nl>;
     schema:license <https://www.apache.org/licenses/LICENSE-2.0>.
 
+platform:padme rdf:type platform:FederatedAnalysisPlatform;
+    schema:url <https://padme-analytics.de/>;
+    rdfs:label "PADME";
+    schema:endorsers <https://www.uk-koeln.de/>, <https://www.rwth-aachen.de/>, <https://www.uni-leipzig.de>;
+    schema:license <http://opensource.org/licenses/MIT>.
+
 platform:datashield rdf:type platform:FederatedAnalysisPlatform;
     schema:url <https://www.datashield.org>;
     rdfs:label "DataShield";
